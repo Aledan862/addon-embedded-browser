@@ -1,0 +1,24 @@
+---
+name: Firefox embedded browser
+version: 0.0.1
+slug: embdbrowser
+description: Firefox embedded browser
+url: https://github.com/bigmoby/addon-embedded-browser/tree/main/embedded_browser
+arch:
+  - amd64
+  - armhf
+  - aarch64
+apparmor: false
+host_network: false
+stage: experimental
+init: false
+hassio_api: true
+privileged:
+  - NET_ADMIN
+udev: false
+usb: false
+startup: services
+ingress: true
+ingress_entry: ingress.html
+kernel_modules: false
+image: "bigmoby/{arch}-addon-embedded-browser"
