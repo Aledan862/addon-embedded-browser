@@ -1,4 +1,4 @@
-# Home Assistant Bigmoby Add-on: Firefox embedded browser
+# Home Assistant Bigmoby Add-on: Surf embedded browser
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -7,7 +7,7 @@
 ![Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
-Firefox embedded browser.
+Surf embedded browser.
 
 ## About
 

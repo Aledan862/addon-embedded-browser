@@ -34,7 +34,7 @@ RUN \
         wmii \
         xfonts-base \
         xfonts-scalable \
-        firefox-esr \
+        surf \
         libssl-dev \
     && rm -rf /var/lib/apt/lists/*
 

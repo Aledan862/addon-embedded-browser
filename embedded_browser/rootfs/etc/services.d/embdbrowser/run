@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Start Firefox embedded browser service
+# Start Surf embedded browser service
 # ==============================================================================
 TMP_FOLDER=$(mktemp -d)
 
@@ -33,7 +33,7 @@ export DISPLAY=":0"
 bashio::log.info "Starting VNC server (local/${LOCAL_ONLY})..."
 
 tigervncserver \
-    -name "Home Assistant - Firefox" \
+    -name "Home Assistant - Surf" \
     -geometry 1920x1080 \
     -depth 16 \
     -localhost ${LOCAL_ONLY} \
@@ -43,9 +43,9 @@ tigervncserver \
     &> /dev/null
 
 # Wait for VNC server to start before continuing
-bashio::log.info "Firefox embedded browser waiting for VNC to start"
+bashio::log.info "Surf embedded browser waiting for VNC to start"
 bashio::net.wait_for 5900
 
 # Start Embedded browser
-bashio::log.info "Starting Firefox embedded browser in private mode..."
-firefox --private-window -width 400 -height 600 http://192.168.1.1
+bashio::log.info "Starting Surf embedded browser in private mode..."
+surf http://192.168.1.1
